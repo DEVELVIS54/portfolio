@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - SEBGO ELVIS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="scripts.js"></script>
+</head>
+
+<body>
+
+    <!-- Header fixe -->
+    <header id="header">
+        <div class="container header-container">
+            <h1 class="logo">SEBGO ELVIS</h1>
+            <p class="title">Développeur Python Junior</p>
+            <nav>
+                <button id="menu-toggle" aria-label="Ouvrir menu">&#9776;</button>
+                <ul id="menu" class="menu">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#apropos" class="nav-link">À propos</a></li>
+                    <li><a href="#competences" class="nav-link">Compétences</a></li>
+                    <li><a href="#projets" class="nav-link">Projets</a></li>
+                    <li><a href="#certificats" class="nav-link">Certificats</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="section accueil">
+        <div class="container accueil-container">
+            <div class="photo-profil">
+                <img src="photo-profil.jpg" alt="Photo de profil SEBGO ELVIS" />
+                <div class="photo-reflet"></div>
+            </div>
+            <div class="intro-texte">
+                <h2>Bonjour, je suis <span class="typed-text"></span><span class="cursor">|</span></h2>
+                <p>Développeur junior passionné par Python, le développement web et logiciel. Actuellement en Licence 2 Informatique.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="section apropos">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p>Parcours scolaire :</p>
+            <ul>
+                <li>CEP — 2016</li>
+                <li>BEPC — 2021</li>
+                <li>BAC — 2024</li>
+                <li>Licence Informatique L2 — en cours</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section competences">
+        <div class="container">
+            <h2>Compétences techniques</h2>
+
+            <div class="skill-category">
+                <h3>Langages</h3>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>…</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <ul class="skill-list">
+                    <li>Django</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Outils</h3>
+                <ul class="skill-list">
+                    <li>Git & GitHub</li>
+                    <li>VS Code</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <ul class="skill-list">
+                    <li>Travail en équipe</li>
+                    <li>Rigueur</li>
+                    <li>Résolution de problèmes</li>
+                    <li>Apprentissage rapide</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section projets">
+        <div class="container">
+            <h2>Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Mini-Blog Django</h3>
+                    <p>Authentification, CRUD, base de données, publication d’articles.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Site web HYDROBAT</h3>
+                    <p>Site vitrine responsive avec animations.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Mini-projets en entreprise</h3>
+                    <p>Projets divers réalisés en milieu professionnel.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Freelance</h3>
+                    <p>Missions variées selon les besoins de clients.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Missions scolaires en équipe</h3>
+                    <p>Projets collaboratifs réalisés dans le cadre scolaire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Certificats -->
+    <section id="certificats" class="section certificats">
+        <div class="container">
+            <h2>Mes certificats</h2>
+            <p>Voici quelques-uns de mes certificats académiques et professionnels :</p>
+            <div class="carousel">
+                <button class="carousel-btn prev" aria-label="Certificat précédent">&#10094;</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide"><img src="certificat1.jpg" alt="Certificat CEP 2016" /></li>
+                        <li class="carousel-slide"><img src="certificat2.jpg" alt="Certificat BEPC 2021" /></li>
+                        <li class="carousel-slide"><img src="certificat3.jpg" alt="Certificat BAC 2024" /></li>
+                        <!-- Autres certificats ici -->
+                    </ul>
+                </div>
+                <button class="carousel-btn next" aria-label="Certificat suivant">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contactez-moi</h2>
+            <form id="contact-form" autocomplete="off">
+                <input type="text" name="nom" placeholder="Votre nom" required />
+                <input type="email" name="email" placeholder="Votre email" required />
+                <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+            <div class="social-links">
+                <a href="https://github.com/toncompte" target="_blank" aria-label="GitHub">GitHub</a>
+                <a href="https://linkedin.com/in/tonprofil" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 SEBGO ELVIS - Portfolio</p>
+    </footer>
+
+</body>
+
+</html>

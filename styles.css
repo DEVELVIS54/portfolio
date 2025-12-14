@@ -1,0 +1,56 @@
+/* Styles spécifiques pour compétences */
+
+.skill-category {
+    margin-bottom: 2rem;
+}
+
+.skill-category h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.skill-list {
+    list-style: disc inside;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    max-width: 600px;
+}
+
+
+/* Projets - grille améliorée */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.project-card:hover {
+    transform: rotateY(12deg) rotateX(8deg) translateZ(20px);
+    box-shadow: 0 12px 30px rgba(78, 154, 241, 0.5);
+}
+
+.project-card h3 {
+    margin-bottom: 0.7rem;
+    color: var(--secondary-color);
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+
+/* Réutiliser la section certificats & carousel déjà fournis auparavant */
